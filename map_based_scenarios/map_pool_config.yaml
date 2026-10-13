@@ -1,0 +1,15 @@
+# Official map pool settings; replicates the mechanism of the historical
+# map_lopo_sparse_random64 pool (calibrated report counts from the training
+# MRO windows, fixed walking speed and disconnect/reconnect ranges).
+gates:
+  West_Gate: {lat: 36.543179, lon: 116.822931, radius_m: 0.0}
+  North_Gate: {lat: 36.551051, lon: 116.8286, radius_m: 60.0}
+mobility_config:
+  speed_mps_range: [1.0, 1.8]
+connection_config:
+  mean_connected_seconds: 600.0
+  disconnected_seconds_range: [30.0, 90.0]
+measurement_config:
+  mode: sparse
+  report_count_probs: [0.3481293595434369, 0.3695307545973367, 0.28233988585922637]
+  probability_source: training_mro_report_counts

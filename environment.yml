@@ -1,0 +1,14 @@
+name: causal_mec_offloading
+channels:
+  - pytorch
+  - conda-forge
+dependencies:
+  - python=3.7
+  - numpy=1.21.5
+  - pytorch=1.8.0
+  - matplotlib=3.5.3
+  - pyyaml=6.0.1
+  - pip
+  - pip:
+      - gym==0.26.2
+      - pytest==7.4.4
